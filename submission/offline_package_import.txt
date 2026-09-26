@@ -1,0 +1,5 @@
+$ python -c 'import EmotionDetection; from EmotionDetection.emotion_detection import emotion_detector; print('"'"'Package:'"'"', EmotionDetection.__name__); print('"'"'Module:'"'"', emotion_detector.__module__); assert callable(emotion_detector); print('"'"'EmotionDetection is a valid package.'"'"'); print('"'"'Blank-input result:'"'"', emotion_detector('"'"''"'"'))'
+Package: EmotionDetection
+Module: EmotionDetection.emotion_detection
+EmotionDetection is a valid package.
+Blank-input result: {'anger': None, 'disgust': None, 'fear': None, 'joy': None, 'sadness': None, 'dominant_emotion': None}
