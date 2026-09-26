@@ -74,9 +74,19 @@ commands are saved under `tmp/failed-evidence/`, never presented as passing
 submission evidence. Task 2 uses the raw-response implementation retained in
 `stages/task2/`; later code snapshots use the final implementation.
 
-## Optional browser screenshots
+## Browser screenshots
 
-With the server running, these commands capture actual UI results:
+In Skills Network Cloud IDE, open the Skills Network Toolbox and use
+Launch Application with port `5000`. In the application, analyze
+`I think I am having fun` and save the result screenshot as
+`6b_deployment_test.png`. Clear the input, run analysis again, and save
+the error screenshot as `7c_error_handling_interface.png`.
+
+The lab may block `cdn.playwright.dev`. If it does, use the browser screenshot
+steps above; Playwright is optional and is not needed for the assignment.
+
+On an environment that allows Playwright downloads, these commands capture
+actual UI results with the server running:
 
 ```bash
 python -m pip install -r requirements-browser.txt

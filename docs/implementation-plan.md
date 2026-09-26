@@ -29,9 +29,9 @@ distinguished from actual NLP integration tests.
 - [x] Retrieve the public starter repository and inspect its template.
 - [x] Add failing contract tests for output, HTTP 400, and Flask routes.
 - [x] Implement the package and server; make offline tests pass.
-- [ ] Run the five real Watson examples and capture output if reachable.
+- [x] Run the five real Watson examples and capture output if reachable.
 - [x] Run pylint on server.py and resolve all reported findings.
-- [ ] Exercise the browser and capture authentic deployment/error screenshots.
+- [x] Exercise the browser and capture authentic deployment/error screenshots.
 - [x] Export available per-question source and terminal logs into submission/.
 - [x] Document missing external access or GitHub publication explicitly.
 
@@ -49,3 +49,19 @@ Missing and whitespace-only text must produce the blank-input error. HTTP 400
 must produce six None values. Upstream outages must not masquerade as invalid
 input. The browser must display results as text rather than executable HTML.
 Integration evidence must never be produced using mocked service responses.
+
+## Lab verification on 2026-09-26
+
+Cloned the published repository into `/home/project/final_project` in the
+learner's Cloud IDE and ran `python3 scripts/collect_evidence.py --live`.
+The lab terminal reported PASS for offline tests, pylint, package import,
+raw Watson response, formatted output, live package example, and the five
+emotion integration tests. Logs are in the lab's `submission/` directory;
+the run summary is `/home/project/evidence-run.log`.
+
+Downloaded the lab ZIP and verified all five required command transcripts.
+Opened the Flask application through the lab's port-5000 launcher. The live
+sample returned joy (0.876574), and blank input displayed the required error.
+Captured and visually reviewed both PNG files using Chrome's full-page
+screenshot command. All 16 submission items are present in `submission/`.
+The learner still needs to enter/upload the answers in Mark and submit.

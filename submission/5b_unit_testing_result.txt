@@ -1,0 +1,16 @@
+$ python -m unittest test_emotion_detection -v
+test_anger (test_emotion_detection.TestEmotionDetection)
+An angry statement should express anger. ... ok
+test_disgust (test_emotion_detection.TestEmotionDetection)
+A disgusted statement should express disgust. ... ok
+test_fear (test_emotion_detection.TestEmotionDetection)
+An afraid statement should express fear. ... ok
+test_joy (test_emotion_detection.TestEmotionDetection)
+A glad statement should express joy. ... ok
+test_sadness (test_emotion_detection.TestEmotionDetection)
+A sad statement should express sadness. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.659s
+
+OK
